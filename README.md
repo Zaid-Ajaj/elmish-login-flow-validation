@@ -1,5 +1,6 @@
-## Login Flow & Validation [Demo](https://fable-elmish.github.io/sample-react-timer-svg/)
-![clock.gif](https://cloud.githubusercontent.com/assets/13316248/24984147/011f8420-1fec-11e7-98c7-4005046f174c.gif)
+## Login Flow & Validation
+
+![login](https://user-images.githubusercontent.com/13316248/31746427-ab91e622-b467-11e7-8746-3b4e644529b9.gif)
 
 ## Building and running the app
 
