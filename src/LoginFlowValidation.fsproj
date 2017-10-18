@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+      <!-- Admin Backoffice -->
+    <Compile Include="Admin.Backoffice/Types.fs" />
+    <Compile Include="Admin.Backoffice/View.fs" />
+    <Compile Include="Admin.Backoffice/State.fs" />
+    <!-- Admin Login -->
+    <Compile Include="Admin.Login/Types.fs" />
+    <Compile Include="Admin.Login/Http.fs" />
+    <Compile Include="Admin.Login/View.fs" />
+    <Compile Include="Admin.Login/Feedback.fs" />
+    <Compile Include="Admin.Login/State.fs" />
+    <!-- Admin -->
+    <Compile Include="Admin/Types.fs" />
+    <Compile Include="Admin/State.fs" />
+    <Compile Include="Admin/View.fs" />
+    <Compile Include="App.fs" />
+    
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>
