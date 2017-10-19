@@ -17,6 +17,7 @@ type Msg =
     | ChangePassword of string
     | LoginSuccess of adminSecureToken: string
     | LoginFailed of error:string
+    | UpdateValidationErrors 
 
 type State = {
     LoggingIn: bool
@@ -24,5 +25,6 @@ type State = {
     UsernameValidationErrors: string list
     PasswordValidationErrors: string list
     InputPassword: string
+    HasTriedToLogin: bool
     LoginError: string option
 }

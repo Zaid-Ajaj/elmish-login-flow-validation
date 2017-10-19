@@ -38,9 +38,10 @@ let cardBlockStyle =
 
 [<Emit("null")>]
 let emptyElement : ReactElement = jsNative
-let errorMessagesIfAny = function
+let errorMessagesIfAny triedLogin = function
   | [ ] -> emptyElement
-  | errors -> 
+  | x when triedLogin = false -> emptyElement
+  | errors ->
     let errorStyle = Style [ Color "crimson"; FontSize 12 ]
     ul [ ] 
        [ for error in errors -> 
@@ -77,9 +78,9 @@ let render (state: State) dispatch =
                 [ appIcon ]
                br []
                textInput "Username" state.InputUsername Text (ChangeUsername >> dispatch)
-               errorMessagesIfAny state.UsernameValidationErrors
+               errorMessagesIfAny state.HasTriedToLogin state.UsernameValidationErrors
                textInput "Password" state.InputPassword Password (ChangePassword >> dispatch)
-               errorMessagesIfAny state.PasswordValidationErrors
+               errorMessagesIfAny state.HasTriedToLogin state.PasswordValidationErrors
                div
                 [ Style [ TextAlign "center" ] ]
                 [ button 
