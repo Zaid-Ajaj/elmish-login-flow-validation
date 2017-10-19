@@ -1,6 +1,6 @@
 ## Login Flow & Validation
 
-![login](https://user-images.githubusercontent.com/13316248/31746560-4dde9b3c-b468-11e7-8b85-5ecef9832990.gif)
+![login](https://user-images.githubusercontent.com/13316248/31772462-09ba0d88-b4e0-11e7-92b5-83669d2d0eb9.gif)
 
 ## Building and running the app
 
