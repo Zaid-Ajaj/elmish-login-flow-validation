@@ -33,8 +33,6 @@ let validateInput (state: State) =
   usernameValidationErrors, passwordValidationErrors
 
 let update msg (state: State) = 
-    if state.LoggingIn then state, Cmd.none
-    else
     match msg with 
     | ChangeUsername name ->
         let nextState = { state with InputUsername = name }          
